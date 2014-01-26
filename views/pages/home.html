@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block bodyClass %}{{ super() }} home-page{% endblock %}
+
+{# breadcrumbs are excluded from the homepage #}
+{% block breadcrumbs %}
+{% endblock %}
+
+
+
+{% block mainContent %}
+
+  {{ aposSingleton({slug: slug +':homeBlog', type:'blog', area: page.areas.homeBlog, edit:edit}) }}
+
+{% endblock %}

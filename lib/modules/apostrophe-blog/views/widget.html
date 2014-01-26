@@ -1,0 +1,14 @@
+{% for snippet in item._snippets %}
+  {% if not snippet.hideTitle %}
+    <h3 class="blog-title">
+      {% if snippet.url %}
+        <a href="{{ snippet.url }}">
+      {% endif %}
+      {{ snippet.title | e }}
+      {% if snippet.url %}
+        </a>
+      {% endif %}
+    </h3>
+  {% endif %}
+  {{ aposArea({ area: snippet.areas.body }) }}
+{% endfor %}

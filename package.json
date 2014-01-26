@@ -1,0 +1,30 @@
+{
+  "name": "jsumnersmith.com",
+  "version": "0.4.0",
+  "description": "Apostrophe site for jsumnersmith.com",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsumnersmith/jsumnersmith"
+  },
+  "author": "P'unk Avenue",
+  "license": "BSD",
+  "dependencies": {
+    "apostrophe": "0.x",
+    "apostrophe-ui-2": "0.x",
+    "apostrophe-editor-2": "0.x",
+    "apostrophe-rss": "0.x",
+    "apostrophe-twitter": "0.x",
+    "apostrophe-pages": "0.x",
+    "apostrophe-blog": "0.x",
+    "apostrophe-events": "0.x",
+    "apostrophe-snippets": "0.x",
+    "apostrophe-map": "0.x",
+    "apostrophe-people": "0.x",
+    "apostrophe-site": "0.x",
+    "apostrophe-groups": "0.x"
+  }
+}

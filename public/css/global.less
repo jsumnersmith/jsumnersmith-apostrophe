@@ -1,0 +1,52 @@
+body
+{
+  margin: 0;
+}
+
+// Header Styles
+.header
+{
+  border-top: 10px solid black;
+  h1
+  {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  blockquote
+  {
+    .Playfair();
+    border: 2px solid black;
+    // border-bottom: 2px solid black;
+    padding: 25px 50px;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    cite
+    {
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
+    p
+    {
+      font-style: italic;
+      &:first-child
+      {
+        margin-left: -5px;
+      }
+    }
+  }
+}
+
+// The footer and stuff
+footer
+{
+  padding: 20px 0;
+  background: #efefef;
+  p
+  {
+    text-align: center;
+    .Crimson(1rem, bolder, normal);
+  }
+}

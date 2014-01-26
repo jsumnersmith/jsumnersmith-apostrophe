@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/playfairdisplay-black-webfont.eot');
+  src: url('/fonts/playfairdisplay-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/playfairdisplay-black-webfont.woff') format('woff'),
+       url('/fonts/playfairdisplay-black-webfont.ttf') format('truetype'),
+       url('/fonts/playfairdisplay-black-webfont.svg#playfair_displayblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/playfairdisplay-blackitalic-webfont.eot');
+  src: url('/fonts/playfairdisplay-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/playfairdisplay-blackitalic-webfont.woff') format('woff'),
+       url('/fonts/playfairdisplay-blackitalic-webfont.ttf') format('truetype'),
+       url('/fonts/playfairdisplay-blackitalic-webfont.svg#playfair_displayblack_italic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/playfairdisplay-bold-webfont.eot');
+  src: url('/fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/playfairdisplay-bold-webfont.woff') format('woff'),
+       url('/fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+       url('/fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/playfairdisplay-bolditalic-webfont.eot');
+  src: url('/fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/playfairdisplay-bolditalic-webfont.woff') format('woff'),
+       url('/fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
+       url('/fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/playfairdisplay-italic-webfont.eot');
+  src: url('/fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+       url('/fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+       url('/fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/playfairdisplay-regular-webfont.eot');
+  src: url('/fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+       url('/fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+       url('/fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('/fonts/crimsontext-bold-webfont.eot');
+  src: url('/fonts/crimsontext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/crimsontext-bold-webfont.woff') format('woff'),
+       url('/fonts/crimsontext-bold-webfont.ttf') format('truetype'),
+       url('/fonts/crimsontext-bold-webfont.svg#crimson_textbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('/fonts/crimsontext-bolditalic-webfont.eot');
+  src: url('/fonts/crimsontext-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/crimsontext-bolditalic-webfont.woff') format('woff'),
+       url('/fonts/crimsontext-bolditalic-webfont.ttf') format('truetype'),
+       url('/fonts/crimsontext-bolditalic-webfont.svg#crimson_textbold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Crimson';
+  src: url('/fonts/crimsontext-italic-webfont.eot');
+  src: url('/fonts/crimsontext-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/crimsontext-italic-webfont.woff') format('woff'),
+       url('/fonts/crimsontext-italic-webfont.ttf') format('truetype'),
+       url('/fonts/crimsontext-italic-webfont.svg#crimson_textitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('/fonts/crimsontext-roman-webfont.eot');
+  src: url('/fonts/crimsontext-roman-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/crimsontext-roman-webfont.woff') format('woff'),
+       url('/fonts/crimsontext-roman-webfont.ttf') format('truetype'),
+       url('/fonts/crimsontext-roman-webfont.svg#crimson_textroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// Mixins for the Two familiess
+.Playfair(@size: 100%, @weight: normal, @style: normal)
+{
+  font-family: 'Playfair', serif;
+  font-weight: @weight;
+  font-style: @style;
+  font-size: @size;
+  letter-spacing: 0.075em;
+}
+
+.Crimson(@size: 100%, @weight: normal, @style: normal)
+{
+  font-family: 'Crimson Text', serif;
+  font-weight: @weight;
+  font-style: @style;
+  font-size: @size;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+  .Playfair(100%, bold, normal);
+  line-height: 1.25em;
+  color: @dark;
+  margin-top: 20px;
+}
+
+h1 { font-size: 600%;  font-weight: 900;}
+h2 { font-size: 175%; }
+h3 { font-size: 150%; }
+h4 { font-size: 125%; }
+h5 { font-size: 100%; }
+h6 { font-size: 75%;  }
+
+body
+{
+  .Crimson(20px);
+  line-height: 1.5em;
+}
+
+// Header styles
+h1
+{
+  a
+  {
+    color: @dark;
+  }
+}
+
+
+// dark background with light text, full-width
+.alternate-header-styles()
+{
+  h3,h4
+  {
+    width: 100%;
+    padding: 24px;
+    background-color: @dark;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+  }
+}
