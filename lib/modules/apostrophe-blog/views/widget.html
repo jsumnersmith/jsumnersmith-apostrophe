@@ -1,5 +1,8 @@
 {% for snippet in item._snippets %}
   {% if not snippet.hideTitle %}
+    <h6 class="blog-date">
+      {{snippet.publicationDate | date("M.DD.YY")}}
+    </h6>
     <h3 class="blog-title">
       {% if snippet.url %}
         <a href="{{ snippet.url }}">
@@ -10,5 +13,5 @@
       {% endif %}
     </h3>
   {% endif %}
-  {{ aposArea({ area: snippet.areas.body }) }}
+  {{ aposArea({ area: snippet.body }) }}
 {% endfor %}

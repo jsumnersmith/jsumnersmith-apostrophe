@@ -5,7 +5,7 @@ var site = require('apostrophe-site')({
   shortName: 'jsumnersmith',
   hostName: 'jsumnersmith',
   title: 'Joel S. Smith',
-  sessionSecret: 'apostrophe sandbox demo party',
+  sessionSecret: 'crazy orpheus party time',
   adminPassword: 'orpheus',
 
   locals: {
@@ -79,11 +79,4 @@ var site = require('apostrophe-site')({
     stylesheets: ['site']
   },
 
-  // beforeEndAssets: function(callback) {
-  //   // Apostrophe already loads these for logged-out users, but we
-  //   // want them all the time in this project.
-  //   site.apos.pushAsset('script', { name: 'vendor/blueimp-iframe-transport', when: 'always' });
-  //   site.apos.pushAsset('script', { name: 'vendor/blueimp-fileupload', when: 'always' });
-  //   return callback(null);
-  // }
 });
