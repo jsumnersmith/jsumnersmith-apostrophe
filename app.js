@@ -4,7 +4,7 @@ var site = require('apostrophe-site')({
   root: module,
   shortName: 'jsumnersmith',
   hostName: 'jsumnersmith',
-  title: 'Joel S. Smith',
+  title: 'Joel Sumner Smith',
   sessionSecret: 'crazy orpheus party time',
   adminPassword: 'orpheus',
 
