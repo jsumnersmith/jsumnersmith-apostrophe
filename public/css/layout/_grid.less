@@ -1,0 +1,43 @@
+// structural defaults
+
+.block
+{
+  width: 100%;
+  padding: 40px;
+  @media screen and (max-width: 960px){
+    padding: 10px 40px;
+  }
+}
+
+.inner
+{
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.column
+{
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  vertical-align: top;
+  &:nth-child(3)
+  {
+    margin-right: 0;
+  }
+}
+
+.column-2
+{
+  float: left;
+  width: 66%;
+}
+
+// The Vertical Grid
+.header { min-height: 15vh;}
+.main-content { min-height: 70vh;}
+.footer { min-height: 15vh;}
+
+
+
+@transition-time: 0.3s;

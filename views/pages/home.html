@@ -10,6 +10,10 @@
 
 {% block mainContent %}
 
-  {{ aposSingleton({slug: slug +':homeBlog', type:'blog', area: page.homeBlog, edit:edit}) }}
+  
+
+  <h3>Hi, I'm</h3>
+  <h1>Joel Sumner Smith</h1>
+  {{aposArea(page, 'home', {textOnly: true})}}
 
 {% endblock %}

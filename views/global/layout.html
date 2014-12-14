@@ -26,46 +26,13 @@
       </blockquote>
 
 
-      <div class="main-navigation">
 
-        {% block mainNav %}
-          <ul class="tabs">
-            {% for tab in page.tabs %}
-              {% if tab.slug == page.slug %}
-                <li class="tab current-page">{{ pageLink(tab) }}</li>
-              {% else %}
-                <li class="tab">{{ pageLink(tab) }}</li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        {% endblock %}
-
-      </div>
       {% block headerBody %}
       {% endblock %}
     </div>
   </div>
 {% endblock %}
 
-
-{% block breadcrumbs %}
-  <div class="block breadcrumb-nav">
-    <div class="inner">
-      <ol class="breadcrumbs ancestors clearfix">
-        {% for relative in page.ancestors %}
-          <li>{{ pageLink(relative) }}&nbsp;/&nbsp;</li>
-        {% endfor %}
-
-        {# Templates for extended URLs of greedy pages (like blog post permalink pages #}
-        {# will want to make the greedy page itself a link and add more li's. #}
-        {# see the apostrophe-blog's show.html for an example of this. #}
-        {% block extraBreadcrumbs %}
-        <li>{{ pageLink(page, { span: true }) }}</li>
-        {% endblock %}
-      </ol>
-    </div>
-  </div>
-{% endblock %}
 
 {% block main %}
   <div class="block main-content">
@@ -87,11 +54,14 @@
 {# that inherits this one we want to use the global.areas object instead of the page.areas object. #}
 {% block footerBody %}
   <footer class="footer">
+    <img src="/images/coffee.png" class="js-avatar">
+    <p class="js-handle">@jsumnersmith</p>
     <ul>
-      <li><a href="http://punkave.com" class="js-punk"><img src="images/js-punk.png"></a></li>
-      <li><a href="http://twitter.com/jsumnersmith" class="js-twitter"><img src="images/js-twitter.png"></a></li>
-      <li><a href="http://github.com/jsumnersmith" class="js-github"><img src="images/js-github.png"></a></li>
+      <li><a href="http://punkave.com" class="js-punk"><img src="/images/js-punk.png"></a></li>
+      <li><a href="http://twitter.com/jsumnersmith" class="js-twitter"><img src="/images/js-twitter.png"></a></li>
+      <li><a href="http://github.com/jsumnersmith" class="js-github"><img src="/images/js-github.png"></a></li>
+      <li><a href="http://www.linkedin.com/pub/joel-smith/28/56a/507/" class="js-linkedin"><img src="/images/js-linkedin.png"></a></li>
+
     </ul>
-    <p>&copy; 2014, Joel Sumner Smith</p>
   </footer>
 {% endblock %}

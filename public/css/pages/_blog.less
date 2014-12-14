@@ -1,0 +1,41 @@
+// Really just styles for the widget wich drives the home page.
+.apos-blog-post
+{
+  text-align: left;
+  h3.blog-title
+  {
+    .SourceSans(300%, bolder, normal);
+    @media screen and (max-width: 960px){
+      font-size: 200%;
+    }
+  }
+  .apos-content
+  {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    p
+    {
+      margin-bottom: 1rem;
+    }
+
+    //When we want to quote something.
+    .apos-pullquote
+    {
+      font-size: 20px;
+      color: #3D3939;
+      font-style: italic;
+    }
+  }
+}
+
+.literature
+{
+  h3.blog-title
+  {
+    .Playfair(300%, bolder, italic);
+    @media screen and (max-width: 960px){
+      font-size: 200%;
+    }
+  }
+}

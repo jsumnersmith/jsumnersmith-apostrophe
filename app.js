@@ -50,12 +50,9 @@ var site = require('apostrophe-site')({
 
   pages: {
     types: [
-      { name: 'default', label: 'Default (Two Column)' },
-      { name: 'onecolumn', label: 'One Column' },
-      { name: 'marquee', label: 'Marquee' },
+      { name: 'default', label: 'Simple' },
       { name: 'home', label: 'Home Page' },
       { name: 'blog', label: 'Blog' },
-      { name: 'map', label: 'Map' }
     ]
   },
 
@@ -63,12 +60,36 @@ var site = require('apostrophe-site')({
   modules: {
     // Styles required by the new editor, must go FIRST
     'apostrophe-ui-2':   { },
-    'apostrophe-blog':   { widget: true  },
+    'apostrophe-blog-2':   {
+      widget: true,
+      indexes: {
+        addFields: [
+          {
+            name: 'theme',
+            label: 'Blog Theme: Select One',
+            type: 'select',
+            choices: [
+              {
+                label: 'Literature',
+                value: 'literature'
+              },
+              {
+                label: 'Technology',
+                value: 'technology'
+              }
+            ]
+          }
+        ]
+      }
+    },
     'apostrophe-map':    { },
     'apostrophe-people': { },
     'apostrophe-groups': { },
     // The new editor
-    'apostrophe-editor-2': { }
+    'apostrophe-editor-2': { },
+    'apostrophe-schema-widgets': {
+      
+    },
   },
 
   // These are assets we want to push to the browser.
