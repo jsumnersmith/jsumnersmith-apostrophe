@@ -1,0 +1,57 @@
+{% include 'pagerMacros.html' %}
+{# use renderBlogPosts to show all pieces as full posts on a page #}
+
+{% macro renderBlogPosts(pieces) %}
+{% if pieces %}
+{% for piece in pieces %}
+{{ renderBlogPost(piece, { edit: false }) }}
+{% endfor %}
+{% else %}
+<h4>{{ __('There are no blog posts yet.') }}</h4>
+{% endif %}
+{% endmacro %}
+
+{% macro renderBlogPost(piece, options = {}) %}
+<div class="apos-blog-post">
+  <div class="apos-blog-post-heading">
+    <h4><a href="{{ piece.url }}">{{ piece.title | e }}</a></h4>
+    <div class="blog-title-divider"></div>
+    <h6>{{ piece.publishedAt | date("MMM DD, YYYY") }}</h6>
+  </div>
+  <div class="apos-blog-post-body">{{ aposArea(piece, 'body', { edit: options.edit }) }}</div>
+  {% if piece.tags %}
+  <div class="apos-blog-tags">
+    {{ __('File under') }}: {{ piece.tags|join(', ') }}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{# ...or use renderBlogPostPreviews to show previews of all pieces on a page (date and title) #}
+
+{% macro renderBlogPostPreviews(pieces) %}
+{% if pieces %}
+{% for piece in pieces %}
+{{ renderBlogPostPreview(piece) }}
+{% endfor %}
+{% else %}
+<h4>{{ __('There are no blog posts yet.') }}</h4>
+{% endif %}
+{% endmacro %}
+
+{% macro renderBlogPostPreview(piece) %}
+<div class="apos-blog-post">
+  <div class="apos-blog-post-heading">
+    <h6 class="blog-date">{{ piece.publishedAt | date("MMM DD, YYYY") }}</h6>
+    <h3 class="blog-title">
+      <a href="{{piece.slug}}">{{ piece.title | e }}</a>
+    </h3>
+  </div>
+  <div class="apos-blog-post-body apos-content apos-blog-post-excerpt">
+    <p class="">
+      {{aposAreaPlaintext(piece, 'body', {truncate :500})}}
+    </p>
+    <a href="{{piece.slug}}" class="button button--more">Read {{piece.title}}</a>
+  </div>
+</div>
+{% endmacro %}

@@ -278,5 +278,9 @@
 	"Blog Post Versions": "Blog Post Versions",
 	"Rescue Blog Post From Trash": "Rescue Blog Post From Trash",
 	"Image(s)": "Image(s)",
-	"Embed": "Embed"
+	"Embed": "Embed",
+	"Language Class (for prism.js)": "Language Class (for prism.js)",
+	"Code Snippet (The pre and code tag are taken care of for you)": "Code Snippet (The pre and code tag are taken care of for you)",
+	"icon-code": "icon-code",
+	"Code Snippet": "Code Snippet"
 }

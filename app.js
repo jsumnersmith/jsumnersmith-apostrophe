@@ -88,7 +88,28 @@ var site = require('apostrophe-site')({
     // The new editor
     'apostrophe-editor-2': { },
     'apostrophe-schema-widgets': {
-      
+      widgets: [
+        {
+          name: 'codeSnippet',
+          label: 'Code Snippet',
+          icon: 'icon-code',
+          schema: [
+            {
+              name: 'languageClass',
+              label: 'Language Class (for prism.js)',
+              type: 'string',
+              required: true
+            },
+            {
+              name: 'codeSnippet',
+              label: 'Code Snippet (The pre and code tag are taken care of for you)',
+              type: 'string',
+              textarea: true,
+              required: true
+            }
+          ]
+        }
+      ]
     },
   },
 
@@ -96,7 +117,7 @@ var site = require('apostrophe-site')({
   // The scripts array contains the names of JS files in /public/js,
   // while stylesheets contains the names of LESS files in /public/css
   assets: {
-    scripts: ['site'],
+    scripts: ['site', 'prism'],
     stylesheets: ['site']
   },
 
