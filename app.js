@@ -113,6 +113,20 @@ var site = require('apostrophe-site')({
     },
   },
 
+  sanitizeHtml: {
+    allowedTags: [ 'h3', 'h4', 'h5', 'h6', 'blockquote', 'p', 'a', 'ul',
+    'ol', 'nl', 'li', 'b', 'i', 'span', 'strong', 'em', 'strike', 'code', 'hr', 'br',
+    'div', 'table', 'thead', 'caption', 'tbody', 'tr', 'th', 'td', 'pre' ],
+    allowedAttributes: {
+      a: [ 'href', 'name', 'target', 'id' ],
+      img: [ 'src' ],
+      span: [ 'class' ]
+    },
+    selfClosing: [ 'img', 'br', 'hr', 'area', 'base', 'basefont', 'input',
+    'link', 'meta' ],
+    allowedSchemes: [ 'http', 'https', 'ftp', 'mailto' ]
+  },
+
   // These are assets we want to push to the browser.
   // The scripts array contains the names of JS files in /public/js,
   // while stylesheets contains the names of LESS files in /public/css
