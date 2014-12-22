@@ -9,7 +9,8 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"],
+span.highlight {
   color: #fdf6e3;
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   font-size: 14px;
@@ -42,9 +43,11 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
+:not(pre) > code[class*="language-"],
+span.highlight {
+  padding: .3em;
   border-radius: .3em;
+  font-size: 20px;
 }
 
 .token.comment,

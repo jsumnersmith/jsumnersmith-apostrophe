@@ -28,6 +28,16 @@
         {{ page.title | e }}
       </h3>
     </div>
-    <div class="apos-blog-post-body">{{ aposArea(page, 'body', { edit: options.edit, controls: ['style', 'bold', 'italic','createLink','unlink', 'insertUnorderedList','NumberedList','Blockquote','insertTable', 'codeSnippet'] }) }}</div>
+    <div class="apos-blog-post-body">{{ aposArea(page, 'body', {
+        edit: options.edit,
+        styles: [
+          { value: 'div', label: 'Normal' },
+          { value: 'h3', label: 'H3'},
+          { value: 'h4', label: 'H4'},
+          { value: 'h5', label: 'H5'},
+          { value: 'h6', label: 'H6'},
+          { value: 'span', label: 'Inline Highlight', attributes: { class: 'highlight' } }
+        ],
+        controls: ['style', 'bold', 'italic','createLink','unlink', 'insertUnorderedList','NumberedList','Blockquote','insertTable', 'codeSnippet', 'slideshow'] }) }}</div>
   </div>
 {% endblock %}
