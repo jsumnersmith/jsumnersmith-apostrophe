@@ -7,9 +7,9 @@
 
 {% block mainContent %}
 
-  <div class="column">
+  {# <div class="column">
 
-    {# let's show a subnav, but only if this page has children #}
+    {# let's show a subnav, but only if this page has children
     {% if page.children.length %}
         {% block subNav %}
           <div class="column-element">
@@ -34,9 +34,9 @@
       }) }}
     </div>
 
-  </div>
+  </div> #}
 
-  <div class="column-2 default-content-area">
+  <div class="default-content-area">
     {# we're going to enable extraFields here so that an image within the area can have a title and a description. #}
     {{ aposArea(page, 'content2', {
       controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'slideshow', 'video',           'insertUnorderedList', 'blog' ],
