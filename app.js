@@ -12,6 +12,7 @@ var site = require('apostrophe-site')({
     loginButton: false
   },
 
+
   lockups: {
     left: {
       label: 'Left',

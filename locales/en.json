@@ -282,5 +282,7 @@
 	"Language Class (for prism.js)": "Language Class (for prism.js)",
 	"Code Snippet (The pre and code tag are taken care of for you)": "Code Snippet (The pre and code tag are taken care of for you)",
 	"icon-code": "icon-code",
-	"Code Snippet": "Code Snippet"
+	"Code Snippet": "Code Snippet",
+	"Size": "Size",
+	"Add Item": "Add Item"
 }
